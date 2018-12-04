@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParkingLot Test Automation Suite]">
+  <test thread-count="5" name="ParkingLot Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="expectedTitle" value="Parking Calculator"/>
+    <parameter name="url" value="http://adam.goucher.ca/parkcalc/"/>
+    <parameter name="expectedurl" value="adam.goucher.ca/parkcalc/index.php?Lot="/>
+    <classes>
+      <class name="com.ParkingLot.ParkingcalcTest">
+        <methods>
+          <include name="ParkingvalidationTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ParkingLot.ParkingcalcTest -->
+    </classes>
+  </test> <!-- ParkingLot Test(failed) -->
+</suite> <!-- Failed suite [ParkingLot Test Automation Suite] -->

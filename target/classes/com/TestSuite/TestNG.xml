@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ParkingLot Test Automation Suite" parallel="false">
+
+	<listeners>
+		<listener
+	        class-name="com.qa.ExtentReporterListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="ParkingLot Test">
+		<!-- Parameters for the Tests" -->
+		<!-- <parameter name="browser" value="Firefox"></parameter> -->
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="url"
+			value="http://adam.goucher.ca/parkcalc/"></parameter>
+		<parameter name="expectedTitle" value="Parking Calculator"></parameter>
+		<parameter name="expectedurl"
+			value="adam.goucher.ca/parkcalc/index.php?Lot="></parameter>
+		<classes>
+			<class name="com.ParkingLot.ParkingcalcTest"></class>
+		</classes>
+	</test>
+</suite>
+
+
